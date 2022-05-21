@@ -1,2 +1,53 @@
 # Exploratory-Data-Analysis
-Exploratory Data Analysis for INFO 201, Spring 2022
+
+Exploratory Data Analysis for INFO 201, Spring 2022, Yaqi Liu, Mike Deng, Ashley Ding, Hana Geer
+
+## Introduction
+
+We are interested in this field because we share a common interest, which is sports. Some of us like basketball, and some of us like volleyball, so we just flipped a coin to decide which sport data set should we do, and the basketball side won. We think that doing an data analysis on the 2021-2022 season NBA data of players would be interesting because there is a playoff going on in NBA, and having the data for the players in different teams can help us understand who will eventually win the championship for this year, and also a deeper understanding of the data of NBA. We have also found similar project regarding to this data set, including but not limited to: "Using Machine Learning to Profile 2020 NBA Draft Prospects", "DATA-DRIVEN APPROACHES TO NBA TEAM EVALUATION AND BUILDING", and "Model that can predict whether a basketball shot attempt will be a miss." By doing this analysis, we aim for a deeper understanding of using R and hopefully we can answer these 3 questions below:
+
+1.  Who is the player that has the most points per game throughout one season?
+
+2.  Who is the oldest player in this season?
+
+3.  Which player has the most points from shooting threes per game throughout one season?
+
+## Summary information
+
+```{r}
+source("Summary_Information.R")
+```
+
+By doing analysis of the NBA 2021-2022 player data set, we can find out that there are 497 current players that participated in the 2021-22 NBA season. And this data set has 29 types of data to store for each player. we can successfully answer the 3 questions above. The code for the summary information is located in the "Summary_Information.R." The player that has the most points throughout one season per game is Bradley Beal, with 32.8 points per game. The oldest player is Andre Iguodala, with the age of 37. The player that has the most points from shooting three point shots is Stephen Curry, with average 5 three-point-field-goal, meaning that he gets 15 points every game by shooting three's, which is quite incredible.
+
+## Aggregate Table Script
+
+Since there are so many players in the data set, they are group by the 20 of the most points in the data set. The reason why we included this chart is because it help us to know who are the best players in this decade, so that we can know more about the potential NBA championship that is coming this June. We can value them as this chart reveals the four most important aspects discussed in our group to do the comparison and see the top 20 player. From the table, we can see each player are good at different area, the 2 Point shots, 3 Point shots, block, Average points, between each player are all having the huge differences, which means that if a player want to be a great player, he needs to be good at one part. Eventually, they are ranked by the average points in the rank as having how many points in each game shows the dominance of players in NBA games.
+
+```{r}
+source("Table.R")
+```
+
+## Chart Script(s)
+
+The relationship between the score and age of NBA players in the 2020-2021 results is revealed with a scatter plot. This can visualize the age and scoring of NBA players. The reason why we included this chart is because we think the factor of age might play a dominant role in how good the player performs on court on the NBA. Older player might not have as much athleticism. Overall, the age distribution of the athletes is 19-37 years old, and the age of scoring is concentrated in the 20-30 years old. Some notable observations include that most players scored under 15 points, and as age goes on, the older players are less likely to have high points compared to young players. Most players are in there 22-28 years.
+
+```{r}
+source("agevspts.R")
+```
+
+## Point per game for all players in different positions
+
+The 2020-2021 season's average score for each position of NBA players and the average score of each player are revealed in box plot. The legend means C is center, F is forward, F-C is forward&center, G is guard, PF is power forward, PG is point guard, SF is small forward, SF-PF is small forward&power forward, SG is shooting guard. This plot provides users with the scoring performance and average scoring performance of NBA players in different positions. And the reason why we include this chart is is that it allows users to compare the scoring conditions in different positions more easily. Both charts can provide users with NBA player scoring data and more convenient and quick analysis work. Some notable observations include the fact that point guard can score the most on average, this parallels with the information in the summary table that most of the players in the table are point guards.
+
+```{r}
+source("positions.r")
+```
+
+## Ranking of Points per games for Warriors
+
+The scoring data of each player of the Warriors in the 2020-2021 season is revealed in a bar chart. This makes it more direct and convenient for users to display the points per game of each Warriors player. The reason why we made this chart is because we think the warriors are most likely to win the championship for this year. So it is related that we do a analysis on the Warriors team itself. The yellow line is the mean for the points of the team. Some notable information include that we can see that Stephen Curry has crazy points per game in the team, with over 20 points per game. This is crucial for the success of warriors this season. He shoots a lot of threes as mentioned by the summary information section.
+
+```{r}
+source("warriors.r")
+```
