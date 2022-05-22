@@ -1,6 +1,11 @@
 # Exploratory-Data-Analysis
 
-Exploratory Data Analysis for INFO 201, Spring 2022, Yaqi Liu, Mike Deng, Ashley Ding, Hana Geer
+---
+title: "index.Rmd"
+author: "Yaqi Liu, Mike Deng, Ashley Ding, Hana Geer"
+date: "`r Sys.Date()`"
+output: html_document
+---
 
 ## Introduction
 
