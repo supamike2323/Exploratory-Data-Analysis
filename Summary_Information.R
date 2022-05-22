@@ -31,5 +31,3 @@ summary_info$max_three_pt_field_goal <- data_df %>%
 summary_info$max_three_pt_field_goal_points <- max(data_df$X3P)
 
 summary_info$max_three_pt_field_goal = summary_info$max_three_pt_field_goal[1,1]
-
-print(summary_info)
