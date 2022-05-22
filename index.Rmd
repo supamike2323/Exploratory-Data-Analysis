@@ -3,7 +3,7 @@
 ---
 title: "index.Rmd"
 author: "Yaqi Liu, Mike Deng, Ashley Ding, Hana Geer"
-date: "`r Sys.Date()`"
+date: "2022-05-21"
 output: html_document
 ---
 

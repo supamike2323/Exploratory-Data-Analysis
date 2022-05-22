@@ -1,5 +1,6 @@
-library(dplyr)
-library(tidyverse)
+suppressMessages(library(dplyr))
+suppressMessages(library(tidyverse))
+suppressMessages(library(data.table))
 # A function that takes in a dataset and returns a list of info about it:
 data_df <- read.csv("data.csv")
 summary_info <- list()
