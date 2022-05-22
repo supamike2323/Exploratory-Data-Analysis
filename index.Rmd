@@ -7,6 +7,14 @@ date: "2022-05-21"
 output: html_document
 ---
 
+```{r setup, include=FALSE, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+suppressMessages(library(tidyverse))
+suppressMessages(library(dplyr))
+suppressMessages(library(ggplot2))
+suppressMessages(library(data.table))
+```
+
 ## Introduction
 
 We are interested in this field because we share a common interest, which is sports. Some of us like basketball, and some of us like volleyball, so we just flipped a coin to decide which sport data set should we do, and the basketball side won. We think that doing an data analysis on the 2021-2022 season NBA data of players would be interesting because there is a playoff going on in NBA, and having the data for the players in different teams can help us understand who will eventually win the championship for this year, and also a deeper understanding of the data of NBA. We have also found similar project regarding to this data set, including but not limited to: "Using Machine Learning to Profile 2020 NBA Draft Prospects", "DATA-DRIVEN APPROACHES TO NBA TEAM EVALUATION AND BUILDING", and "Model that can predict whether a basketball shot attempt will be a miss." By doing this analysis, we aim for a deeper understanding of using R and hopefully we can answer these 3 questions below:
